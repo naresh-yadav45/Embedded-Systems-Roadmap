@@ -8,7 +8,7 @@
 
 **An interactive learning platform that organizes everything you need to explore embedded systems engineering, in one place.**
 
-[🌐 **Live Demo**](YOUR_LIVE_LINK)
+[🌐 **Live Demo**](https://embedded-roadmap-by-naresh-yadav.vercel.app/)
 
 </div>
 
@@ -75,7 +75,6 @@ Open `http://localhost:5173` in your browser.
 
 ```
 embedded-systems-roadmap/
-├── reference/          # Original README, map.json and licence (source content)
 ├── scripts/            # Data builder and link checker
 ├── public/             # Favicon and social preview image
 └── src/
@@ -89,24 +88,14 @@ embedded-systems-roadmap/
 
 ## 🧩 How the data works
 
-- `reference/` holds the original roadmap README and `map.json`.
 - `npm run build:data` parses them into `src/data/roadmap.json` and `resources.json`.
 - Every link keeps its **original URL, title and topic associations**. Links are never silently removed. Anything with a structural problem is flagged as *needs verification* in `validation-report.json`.
 - `learningPaths.json` and `projects.json` are hand-written and easy to extend.
-
-## 🙏 Credits & License
-
-The roadmap structure, topic descriptions, connections and learning resources are based on the open-source
-**[Embedded Engineering Roadmap](https://github.com/m3y54m/Embedded-Engineering-Roadmap)** by **Meysam Parvizi**,
-licensed under **[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)**.
-
-The website interface, interactive graph, search, learning paths, progress tracker and exports are my own implementation on top of that content.
-This project is shared under the same **CC BY-SA 4.0** licence (see [`LICENSE`](LICENSE)).
 
 ---
 
 <div align="center">
 
-**Designed & Developed with dedication by Naresh Yadav**
+**Built with passion for students who love electronics, code and embedded systems. 🚀**
 
 </div>
