@@ -4,7 +4,7 @@
 
 <br/>
 
-# 🗺️ Embedded Systems Engineering Roadmap
+# Embedded Systems Engineering Roadmap
 
 **An interactive learning platform that organizes everything you need to explore embedded systems engineering, in one place.**
 
@@ -39,13 +39,13 @@ I built this project to make the embedded engineering learning journey more **st
 | 📤 | **Export** | Roadmap as PNG, PDF or print; outline as Markdown; progress as JSON |
 | 📱 | **Responsive** | Mobile gets expandable topic groups instead of the big graph |
 
-## 🧰 Tech Stack
+## Tech Stack
 
 React 18 · TypeScript · Vite · Tailwind CSS · React Flow · Lucide React · html-to-image · jsPDF
 
 No backend or database: everything runs from local JSON data.
 
-## 🚀 Getting Started
+## Getting Started
 
 ```bash
 # 1. Clone the repository
@@ -86,7 +86,7 @@ embedded-systems-roadmap/
     └── types/          # TypeScript types
 ```
 
-## 🧩 How the data works
+## How the data works
 
 - `npm run build:data` parses them into `src/data/roadmap.json` and `resources.json`.
 - Every link keeps its **original URL, title and topic associations**. Links are never silently removed. Anything with a structural problem is flagged as *needs verification* in `validation-report.json`.
@@ -96,6 +96,6 @@ embedded-systems-roadmap/
 
 <div align="center">
 
-**Built with passion for students who love electronics, code and embedded systems. 🚀**
+**Built with passion for students who love electronics, code and embedded systems. **
 
 </div>
