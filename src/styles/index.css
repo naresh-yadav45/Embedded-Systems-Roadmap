@@ -1,0 +1,46 @@
+@import '@fontsource-variable/inter';
+@import '@fontsource-variable/plus-jakarta-sans';
+@import '@xyflow/react/dist/style.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; scroll-padding-top: 76px; -webkit-text-size-adjust: 100%; }
+  body { @apply bg-white font-sans text-ink antialiased; overflow-x: clip; }
+  h1, h2, h3, h4 { @apply font-display; letter-spacing: -0.015em; }
+  :focus-visible { outline: 2px solid #2563EB; outline-offset: 2px; border-radius: 6px; }
+  ::selection { background: #BFDBFE; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+  }
+}
+
+@layer components {
+  .container-x { @apply mx-auto w-full max-w-[1280px] px-4 sm:px-6 lg:px-8; }
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-sm font-semibold transition-colors; }
+  .btn-primary { @apply btn bg-brand text-white hover:bg-blue-700; }
+  .btn-outline { @apply btn border border-line bg-white text-ink hover:bg-surface; }
+  .btn-ghost { @apply btn text-muted hover:bg-surface hover:text-ink; }
+  .chip { @apply inline-flex items-center gap-1 rounded-full border border-line bg-white px-3 py-1 text-xs font-medium text-ink transition-colors hover:bg-surface; }
+  .chip[aria-pressed='true'] { @apply border-brand bg-brand-soft text-brand; }
+  .card { @apply rounded-xl border border-line bg-white shadow-card; }
+  .eyebrow { @apply text-xs font-semibold uppercase tracking-[0.14em] text-brand; }
+  .h2 { @apply text-2xl font-extrabold text-ink sm:text-3xl; }
+  .input { @apply w-full rounded-lg border border-line bg-white px-3 py-2 text-sm text-ink placeholder:text-slate-400 focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/20; }
+  .scroll-thin { scrollbar-width: thin; scrollbar-color: #CBD5E1 transparent; }
+}
+
+/* React Flow tuning */
+.react-flow { background: #FFFFFF; }
+.react-flow__attribution { display: none; }
+.react-flow__node { cursor: pointer; }
+.react-flow__node.cluster-node, .react-flow__node.band-node { cursor: default; }
+.rf-lowzoom .topic-label { font-size: 15px; font-weight: 700; }
+.handle-hidden { opacity: 0 !important; pointer-events: none !important; width: 1px !important; height: 1px !important; min-width: 0 !important; min-height: 0 !important; border: 0 !important; }
+
+@media print {
+  @page { margin: 12mm; }
+  body { background: #fff; }
+}

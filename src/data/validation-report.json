@@ -1,0 +1,138 @@
+{
+  "generatedFrom": "reference/README.original.md + reference/map.original.json",
+  "warnings": [],
+  "notes": [
+    "7 README URL(s) were not in list-style entries and were added from inline text: https://interrupt.memfault.com/blog/embedded-systems-roadmap-bridging-the-gap | https://github.com/arduino/ArduinoCore-avr | https://github.com/arduino/ArduinoCore-API | https://youtube.com/playlist?list=PL3aaAq2OJU5EWfYT_Z93tc9pBF_Sidba | https://github.com/vazeri/Embedded-Engineering-RoadMap-2018 | https://github.com/m3y54m/Embedded-Engineering-Roadmap-Archived | https://balsamiq.com",
+    "16 badge/license URL(s) were intentionally excluded (shields.io badges, repo stargazer/fork links, license)."
+  ],
+  "summary": {
+    "readmeTopics": 186,
+    "graphNodes": 106,
+    "curatedEdges": 203,
+    "autoLinks": 103,
+    "uniqueResources": 819,
+    "resourceTopicAssociations": 830,
+    "youtubeUrlOccurrencesInReadme": 252,
+    "uniqueYoutubeUrlsInReadme": 250,
+    "youtubeResourcesInDataset": 251,
+    "byKind": {
+      "article": 305,
+      "book": 101,
+      "youtube-playlist": 72,
+      "repository": 36,
+      "youtube-channel": 9,
+      "coursera": 11,
+      "other-video": 24,
+      "course": 8,
+      "documentation": 43,
+      "youtube-video": 170,
+      "tool": 11,
+      "udemy": 17,
+      "datasheet": 12
+    },
+    "needsVerification": 4,
+    "withIssues": 10
+  },
+  "duplicateRawUrls": [
+    {
+      "url": "https://www.oreilly.com/library/view/making-embedded-systems/9781449308889/",
+      "occurrences": 2
+    },
+    {
+      "url": "https://a.co/d/2lt4Svf",
+      "occurrences": 2
+    },
+    {
+      "url": "https://m3y54m.github.io/Embedded-Engineering-Roadmap/",
+      "occurrences": 2
+    },
+    {
+      "url": "https://www.electronics-tutorials.ws",
+      "occurrences": 2
+    },
+    {
+      "url": "https://github.com/m3y54m/FPGA-ASIC-Roadmap",
+      "occurrences": 2
+    },
+    {
+      "url": "https://www.keil.com/",
+      "occurrences": 2
+    },
+    {
+      "url": "https://www.iar.com",
+      "occurrences": 2
+    },
+    {
+      "url": "https://a.co/d/4otoVvI",
+      "occurrences": 2
+    },
+    {
+      "url": "https://a.co/d/61l7Jtb",
+      "occurrences": 2
+    },
+    {
+      "url": "https://www.packtpub.com/free-ebook/extreme-c/9781789343625",
+      "occurrences": 2
+    },
+    {
+      "url": "https://os.phil-opp.com/",
+      "occurrences": 2
+    },
+    {
+      "url": "https://not-matthias.github.io/posts/kernel-driver-with-rust/",
+      "occurrences": 2
+    },
+    {
+      "url": "https://link.springer.com/book/10.1007/978-1-4842-3624-6",
+      "occurrences": 2
+    },
+    {
+      "url": "https://www.youtube.com/playlist?list=PLP29wDx6QmW7HaCrRydOnxcy8QmW0SNdQ",
+      "occurrences": 2
+    },
+    {
+      "url": "https://www.bytesnap.com/news-blog/freertos-vs-linux-embedded-systems/",
+      "occurrences": 2
+    },
+    {
+      "url": "https://youtu.be/1nxGcfIm-TU",
+      "occurrences": 2
+    }
+  ],
+  "needsVerification": [
+    {
+      "id": "r0813",
+      "url": "https://interrupt.memfault.com/blog/embedded-systems-roadmap-bridging-the-gap",
+      "issues": [
+        "no-topic-association"
+      ],
+      "topicIds": []
+    },
+    {
+      "id": "r0817",
+      "url": "https://github.com/vazeri/Embedded-Engineering-RoadMap-2018",
+      "issues": [
+        "no-topic-association"
+      ],
+      "topicIds": []
+    },
+    {
+      "id": "r0818",
+      "url": "https://github.com/m3y54m/Embedded-Engineering-Roadmap-Archived",
+      "issues": [
+        "no-topic-association"
+      ],
+      "topicIds": []
+    },
+    {
+      "id": "r0819",
+      "url": "https://balsamiq.com",
+      "issues": [
+        "no-topic-association"
+      ],
+      "topicIds": []
+    }
+  ],
+  "multiTopicResources": 15,
+  "networkCheck": "Not performed at build time (offline sandbox). Run `npm run check:links` locally to verify HTTP status of every link."
+}

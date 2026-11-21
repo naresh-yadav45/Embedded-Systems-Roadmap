@@ -1,0 +1,116 @@
+[
+  {
+    "id": "embedded-software-engineer",
+    "title": "Embedded Software Engineer",
+    "summary": "Write, build, test and debug the software that runs on microcontrollers and small processors.",
+    "audience": "Students who enjoy programming and want to work close to hardware.",
+    "sequence": [
+      { "stage": "1 · Foundations", "topics": ["C", "Digital Design", "Computer Architecture", "Git"], "why": "C is the working language of the field; digital design and architecture explain what your code runs on." },
+      { "stage": "2 · Microcontroller basics", "topics": ["GPIO", "Interrupts", "Timers / Counters", "PWM", "ADC / DAC", "Watchdog", "Clock Management"], "why": "Peripherals are how firmware touches the real world." },
+      { "stage": "3 · Communication", "topics": ["UART", "I2C", "SPI"], "why": "Almost every sensor and module is reached through one of these three buses." },
+      { "stage": "4 · Software craft", "topics": ["State Machines", "Memory Management", "Algorithms & Data Structures", "Design Patterns", "Compilers / GCC", "Make / CMake"], "why": "Structure and tooling turn working demos into maintainable firmware." },
+      { "stage": "5 · Debug and test", "topics": ["JTAG / SWD", "GDB", "TDD & Unit Testing", "CI/CD Pipelines"], "why": "Fast feedback is what separates hobby code from engineering." },
+      { "stage": "6 · Real-time", "topics": ["RTOS Basics", "FreeRTOS", "Zephyr"], "why": "Move from super-loops to scheduled tasks once the basics feel natural." }
+    ],
+    "prerequisites": ["Basic programming logic", "Principles of Electric Circuits", "Basic Math & Calculus"],
+    "tools": ["GCC / arm-none-eabi toolchain", "Git", "VS Code or a vendor IDE", "A debug probe (SWD)", "GDB / OpenOCD"],
+    "projectIds": ["led-blinking", "push-button-interface", "uart-communication", "freertos-task-scheduling"]
+  },
+  {
+    "id": "embedded-hardware-engineer",
+    "title": "Embedded Hardware Engineer",
+    "summary": "Design, prototype and validate the electronics that firmware runs on.",
+    "audience": "Students who like circuits, soldering and understanding how boards work.",
+    "sequence": [
+      { "stage": "1 · Electronics foundations", "topics": ["Basic Math & Calculus", "Principles of Electric Circuits", "Electronics Fundamentals", "Digital Design"], "why": "Everything else builds on circuit analysis and digital logic." },
+      { "stage": "2 · Measure and prototype", "topics": ["Multimeter", "Breadboarding", "Oscilloscope", "Logic / Protocol Analyzer", "Soldering / Rework"], "why": "Hands-on measurement is how you learn to trust (or debug) a circuit." },
+      { "stage": "3 · Processor side", "topics": ["Computer Architecture", "GPIO", "ADC / DAC", "Clock Management", "Power Management"], "why": "Understand what the MCU needs to run reliably." },
+      { "stage": "4 · Interfaces", "topics": ["UART", "I2C", "SPI", "CAN", "USB", "Sensors & Actuators"], "why": "Hardware must expose the right buses and peripherals." },
+      { "stage": "5 · Board design", "topics": ["Hardware Design Basics", "PCB Design / EMC"], "why": "Layout and EMC knowledge turn a schematic into a real product." },
+      { "stage": "6 · Advanced", "topics": ["FPGA Development", "Digital Signal Processing"], "why": "Specialisations once the fundamentals are solid." }
+    ],
+    "prerequisites": ["Basic Math & Calculus", "Principles of Electric Circuits"],
+    "tools": ["Multimeter", "Oscilloscope", "Logic analyzer", "Soldering station", "A schematic / PCB design tool"],
+    "projectIds": ["led-blinking", "digital-temperature-monitoring", "pwm-motor-control", "custom-pcb-embedded-system"]
+  },
+  {
+    "id": "firmware-developer",
+    "title": "Firmware Developer",
+    "summary": "Bring up boards and write the low-level code that talks to peripherals, bootloaders and buses.",
+    "audience": "Students targeting bare-metal and driver-level work on microcontrollers.",
+    "sequence": [
+      { "stage": "1 · Language and tools", "topics": ["C", "Assembly", "Compilers / GCC", "Make / CMake", "Git"], "why": "Know the toolchain that turns C into a flash image." },
+      { "stage": "2 · Core peripherals", "topics": ["GPIO", "Interrupts", "Timers / Counters", "DMA", "Clock Management", "Watchdog"], "why": "These are the building blocks of every driver." },
+      { "stage": "3 · Buses and data", "topics": ["UART", "I2C", "SPI", "Memory Technologies & File Systems"], "why": "Reading sensors and storing data covers a large part of daily firmware work." },
+      { "stage": "4 · Reliability", "topics": ["State Machines", "Memory Management", "Power Management", "Bootloader / DFU"], "why": "Firmware in the field has to recover, update and sip power." },
+      { "stage": "5 · Debug and verify", "topics": ["JTAG / SWD", "GDB", "OpenOCD", "TDD & Unit Testing", "Hardware Simulation / Emulation"], "why": "Debug probes and simulators shorten the edit-test loop." }
+    ],
+    "prerequisites": ["Digital Design", "Computer Architecture"],
+    "tools": ["arm-none-eabi-gcc", "OpenOCD", "GDB", "A logic analyzer", "Vendor SDK or HAL"],
+    "projectIds": ["uart-communication", "i2c-sensor-integration", "pwm-motor-control", "can-communication-project"]
+  },
+  {
+    "id": "embedded-linux-engineer",
+    "title": "Embedded Linux Engineer",
+    "summary": "Build, boot and extend Linux on single-board computers and custom hardware.",
+    "audience": "Students who want to work with application processors, kernels and drivers.",
+    "sequence": [
+      { "stage": "1 · Foundations", "topics": ["C", "Bash Scripting", "Git", "Operating System Fundamentals", "Computer Architecture"], "why": "The kernel is written in C and the shell is your daily tool." },
+      { "stage": "2 · Build and boot", "topics": ["Compilers / GCC", "Make / CMake", "U-Boot", "Buildroot / Yocto", "Docker"], "why": "Understand how a full Linux image is produced and started." },
+      { "stage": "3 · Kernel and drivers", "topics": ["Linux Kernel", "Device Drivers", "Threading / Parallelism", "IPC"], "why": "Kernel interfaces and process communication are core Linux skills." },
+      { "stage": "4 · Hardware interfaces", "topics": ["I2C", "SPI", "UART", "USB", "Ethernet"], "why": "Drivers sit on top of these buses." },
+      { "stage": "5 · Applications", "topics": ["Qt Framework", "Embedded GUI", "GDB", "CI/CD Pipelines"], "why": "UI, debugging and automation for shipping products." }
+    ],
+    "prerequisites": ["C", "Basic command-line comfort"],
+    "tools": ["A Linux machine or VM", "Yocto or Buildroot", "U-Boot", "GDB / gdbserver", "A single-board computer"],
+    "projectIds": ["embedded-linux-device-driver", "iot-monitoring-system"]
+  },
+  {
+    "id": "iot-developer",
+    "title": "IoT Developer",
+    "summary": "Connect devices to networks and the cloud with secure, low-power communication.",
+    "audience": "Students interested in connected devices, wireless links and data platforms.",
+    "sequence": [
+      { "stage": "1 · Foundations", "topics": ["C", "Python", "GPIO", "UART", "I2C", "SPI", "Sensors & Actuators"], "why": "Read sensors reliably before sending data anywhere." },
+      { "stage": "2 · Connectivity", "topics": ["Wi-Fi", "Bluetooth", "LoRa", "Zigbee", "NB-IoT"], "why": "Pick a radio based on range, power and data rate." },
+      { "stage": "3 · Protocols", "topics": ["TCP/IP", "UDP", "MQTT", "CoAP"], "why": "Lightweight messaging protocols are standard in IoT." },
+      { "stage": "4 · Product concerns", "topics": ["Power Management", "Bootloader / DFU", "Embedded Security", "IoT"], "why": "Battery life, updates and security decide whether a device is shippable." },
+      { "stage": "5 · Real-time and AI", "topics": ["RTOS Basics", "FreeRTOS", "Zephyr", "Edge AI"], "why": "Scheduling and on-device inference for smarter nodes." }
+    ],
+    "prerequisites": ["Basic programming", "Electronics Fundamentals"],
+    "tools": ["ESP32 or similar Wi-Fi / BLE board", "An MQTT broker", "Wireshark or similar", "A power meter"],
+    "projectIds": ["esp32-wifi-monitoring", "iot-monitoring-system", "edge-ai-on-microcontrollers"]
+  },
+  {
+    "id": "automotive-embedded-engineer",
+    "title": "Automotive Embedded Engineer",
+    "summary": "Develop safety-critical ECU software and in-vehicle networks.",
+    "audience": "Students aiming at ECU, ADAS or powertrain roles.",
+    "sequence": [
+      { "stage": "1 · Foundations", "topics": ["C", "C++", "State Machines", "Memory Management", "Git"], "why": "Automotive codebases are mostly C and C++ with strict style rules." },
+      { "stage": "2 · MCU and RTOS", "topics": ["GPIO", "Timers / Counters", "Interrupts", "Watchdog", "RTOS Basics"], "why": "Deterministic timing is central to ECUs." },
+      { "stage": "3 · Vehicle networks", "topics": ["CAN", "LIN", "FlexRay", "MOST", "Ethernet"], "why": "Know which bus is used for which domain of the vehicle." },
+      { "stage": "4 · Process and safety", "topics": ["V-Model", "Standards & Certifications", "AUTOSAR", "SIL / HIL Testing"], "why": "Functional safety and structured processes are mandatory in the industry." },
+      { "stage": "5 · Control", "topics": ["Control Theory", "Digital Signal Processing", "Embedded Security"], "why": "Control loops and secure communication for modern vehicles." }
+    ],
+    "prerequisites": ["C", "Digital Design"],
+    "tools": ["A CAN adapter", "CAN analysis software", "A MISRA-aware static analyser", "MATLAB / Simulink (optional)"],
+    "projectIds": ["can-communication-project", "pwm-motor-control", "freertos-task-scheduling"]
+  },
+  {
+    "id": "rtos-firmware-specialist",
+    "title": "RTOS / Firmware Specialist",
+    "summary": "Design multi-task, time-critical firmware on top of a real-time operating system.",
+    "audience": "Firmware developers who want to specialise in scheduling, synchronisation and real-time behaviour.",
+    "sequence": [
+      { "stage": "1 · Prerequisites in practice", "topics": ["C", "Interrupts", "Timers / Counters", "State Machines", "Memory Management"], "why": "An RTOS adds structure on top of these ideas; it does not replace them." },
+      { "stage": "2 · OS concepts", "topics": ["Operating System Fundamentals", "RTOS Basics", "Threading / Parallelism", "IPC"], "why": "Tasks, scheduling, priorities and synchronisation are the vocabulary of RTOS design." },
+      { "stage": "3 · Hands-on RTOSes", "topics": ["FreeRTOS", "Zephyr", "RT-Thread", "µC/OS", "QNX"], "why": "Compare designs and pick the one that fits the product." },
+      { "stage": "4 · Hardware coupling", "topics": ["DMA", "Power Management", "Watchdog", "Clock Management"], "why": "Real-time systems fail at the boundary with hardware." },
+      { "stage": "5 · Verify", "topics": ["JTAG / SWD", "GDB", "TDD & Unit Testing", "Hardware Simulation / Emulation"], "why": "Tracing and testing concurrency bugs needs good tooling." }
+    ],
+    "prerequisites": ["C", "Interrupts", "Timers / Counters"],
+    "tools": ["FreeRTOS or Zephyr", "A trace tool (e.g. SEGGER SystemView)", "Logic analyzer", "Debug probe"],
+    "projectIds": ["freertos-task-scheduling", "uart-communication", "can-communication-project"]
+  }
+]
