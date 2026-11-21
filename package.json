@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "Interactive Embedded Systems Engineering Roadmap - designed & developed by Naresh Yadav",
   "author": "Naresh Yadav (https://github.com/naresh-yadav45)",
-  "license": "CC-BY-SA-4.0",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite",
